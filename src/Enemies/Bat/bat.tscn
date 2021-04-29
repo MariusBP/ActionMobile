@@ -1,10 +1,11 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://src/Enemies/bat/small_shadow.png" type="Texture" id=1]
 [ext_resource path="res://src/Enemies/bat/bat.png" type="Texture" id=2]
 [ext_resource path="res://src/Technical/Hurtbox.tscn" type="PackedScene" id=3]
-[ext_resource path="res://src/Enemies/bat/bat.gd" type="Script" id=4]
+[ext_resource path="res://src/Enemies/Enemy.gd" type="Script" id=4]
 [ext_resource path="res://src/Technical/Stats.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Technical/PlayerDetectionZone.tscn" type="PackedScene" id=6]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -83,6 +84,9 @@ height = 3.90425
 radius = 6.0
 height = 1.2
 
+[sub_resource type="CircleShape2D" id=18]
+radius = 64.8451
+
 [node name="Bat" type="KinematicBody2D"]
 collision_layer = 16
 collision_mask = 17
@@ -92,7 +96,7 @@ script = ExtResource( 4 )
 position = Vector2( 0, -12 )
 frames = SubResource( 15 )
 animation = "Fly"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -110,7 +114,16 @@ position = Vector2( 0, -9 )
 shape = SubResource( 17 )
 
 [node name="Stats" parent="." instance=ExtResource( 5 )]
+
+[node name="PlayerDetectionZone" parent="." instance=ExtResource( 6 )]
+position = Vector2( 0.420578, 0.52626 )
+
+[node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
+self_modulate = Color( 0.545098, 0.133333, 0.615686, 0.470588 )
+shape = SubResource( 18 )
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 
 [editable path="Hurtbox"]
+
+[editable path="PlayerDetectionZone"]
