@@ -1,0 +1,124 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Characters/Demo/demo_character.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/World/Tiles/Tiles.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Enemies/bat/bat.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/World/Objects/Table/small_table.tscn" type="PackedScene" id=4]
+
+[node name="Demo" type="Node2D"]
+
+[node name="Tiles" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( 0, 536870912, 3, 1, 536870912, 0, 2, 536870912, 0, 3, 536870912, 0, 4, 536870912, 2, 5, 536870912, 65537, 6, 536870912, 0, 7, 536870912, 0, 8, 536870912, 131076, 9, 536870912, 0, 10, 536870912, 0, 11, 536870912, 0, 12, 536870912, 0, 13, 536870912, 0, 14, 536870912, 131074, 15, 536870912, 0, 16, 536870912, 65540, 17, 536870912, 0, 65536, 536870912, 0, 65537, 536870912, 65537, 65538, 536870912, 0, 65539, 536870912, 0, 65540, 536870912, 0, 65541, 536870912, 0, 65542, 536870912, 131076, 65543, 536870912, 131076, 65544, 536870912, 65540, 65545, 536870912, 65537, 65546, 536870912, 65540, 65547, 536870912, 3, 65548, 536870912, 0, 65549, 536870912, 0, 65550, 536870912, 0, 65551, 536870912, 2, 65552, 536870912, 131075, 65553, 536870912, 0, 131072, 536870912, 0, 131073, 536870912, 2, 131074, 0, 3, 131075, 0, 65540, 131076, 0, 0, 131077, 0, 0, 131078, 0, 65539, 131079, 0, 65538, 131080, 0, 0, 131081, 0, 0, 131082, 0, 4, 131083, 0, 0, 131084, 0, 131076, 131085, 0, 0, 131086, 0, 0, 131087, 0, 1, 131088, 536870912, 131072, 131089, 536870912, 0, 196608, 536870912, 65537, 196609, 536870912, 0, 196610, 536870912, 131076, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 2, 196615, 536870912, 65540, 196616, 0, 131076, 196617, 0, 0, 196618, 0, 0, 196619, 0, 2, 196620, 0, 1, 196621, 0, 0, 196622, 0, 0, 196623, 0, 65536, 196624, 536870912, 0, 196625, 536870912, 2, 262144, 536870912, 0, 262145, 536870912, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 65537, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 65540, 262157, 0, 0, 262158, 0, 2, 262159, 0, 0, 262160, 536870912, 0, 262161, 536870912, 3, 327680, 536870912, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 536870912, 0, 327685, 0, 65536, 327686, 0, 0, 327687, 0, 0, 327688, 0, 131076, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 131074, 327696, 536870912, 0, 327697, 536870912, 0, 458751, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 131074, 393221, 0, 2, 393222, 0, 3, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 2, 393227, 0, 0, 393228, 0, 1, 393229, 0, 0, 393230, 0, 131072, 393231, 0, 0, 393232, 536870912, 65537, 393233, 536870912, 0, 458752, 536870912, 4, 458753, 536870912, 3, 458754, 0, 0, 458755, 0, 0, 458756, 0, 65539, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 131076, 458762, 0, 131075, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 458768, 0, 0, 458769, 536870912, 131076, 524288, 536870912, 0, 524289, 536870912, 0, 524290, 536870912, 0, 524291, 536870912, 0, 524292, 536870912, 0, 524293, 536870912, 0, 524294, 536870912, 131074, 524295, 536870912, 0, 524296, 536870912, 1, 524297, 536870912, 0, 524298, 536870912, 0, 524299, 536870912, 0, 524300, 536870912, 65539, 524301, 536870912, 0, 524302, 536870912, 0, 524303, 536870912, 0, 524304, 536870912, 0, 524305, 536870912, 0, 589824, 536870912, 65539, 589825, 536870912, 0, 589826, 536870912, 0, 589827, 0, 131076, 589828, 536870912, 131076, 589829, 536870912, 0, 589830, 536870912, 0, 589831, 536870912, 131072, 589832, 536870912, 131076, 589833, 536870912, 0, 589834, 536870912, 0, 589835, 536870912, 0, 589836, 536870912, 0, 589837, 536870912, 0, 589838, 536870912, 0, 589839, 536870912, 1, 589840, 536870912, 0, 589841, 536870912, 0 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="DemoCharacter" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 41.3407, 50.3427 )
+
+[node name="Tables" type="YSort" parent="YSort"]
+
+[node name="Table1" parent="YSort/Tables" instance=ExtResource( 4 )]
+position = Vector2( 104.468, 100.628 )
+
+[node name="Table2" parent="YSort/Tables" instance=ExtResource( 4 )]
+position = Vector2( 149.709, 108.565 )
+
+[node name="Bat" type="YSort" parent="YSort"]
+
+[node name="Bat" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 48, 136 )
+
+[node name="Bat2" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 32, 160 )
+
+[node name="Bat3" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 56, 160 )
+
+[node name="Bat4" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 32, 136 )
+
+[node name="Bat5" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 104, 40 )
+
+[node name="Bat6" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 88, 64 )
+
+[node name="Bat7" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 112, 64 )
+
+[node name="Bat8" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 88, 40 )
+
+[node name="Bat9" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 111.908, 139.784 )
+
+[node name="Bat10" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 95.9081, 163.784 )
+
+[node name="Bat11" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 119.908, 163.784 )
+
+[node name="Bat12" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 95.9081, 139.784 )
+
+[node name="Bat13" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 167.908, 43.784 )
+
+[node name="Bat14" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 151.908, 67.784 )
+
+[node name="Bat15" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 175.908, 67.784 )
+
+[node name="Bat16" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 151.908, 43.784 )
+
+[node name="Bat17" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 162.362, 138.943 )
+
+[node name="Bat18" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 146.362, 162.943 )
+
+[node name="Bat19" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 170.362, 162.943 )
+
+[node name="Bat20" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 146.362, 138.943 )
+
+[node name="Bat21" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 218.362, 42.9431 )
+
+[node name="Bat22" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 202.362, 66.9431 )
+
+[node name="Bat23" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 226.362, 66.9431 )
+
+[node name="Bat24" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 202.362, 42.9431 )
+
+[node name="Bat25" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 226.27, 142.727 )
+
+[node name="Bat26" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 210.27, 166.727 )
+
+[node name="Bat27" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 234.27, 166.727 )
+
+[node name="Bat28" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 210.27, 142.727 )
+
+[node name="Bat29" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 282.27, 46.7272 )
+
+[node name="Bat30" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 266.27, 70.7272 )
+
+[node name="Bat31" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 290.27, 70.7272 )
+
+[node name="Bat32" parent="YSort/Bat" instance=ExtResource( 3 )]
+position = Vector2( 266.27, 46.7272 )
+
+[node name="Node2D" type="Node2D" parent="."]
