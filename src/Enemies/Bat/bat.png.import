@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bat.png-41727521d3afc92a9f76047a32af0ec7.stex"
+path="res://.import/bat.png-8d29b79156e2210e1f0884a013d9273e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Enemies/Bat/bat.png"
-dest_files=[ "res://.import/bat.png-41727521d3afc92a9f76047a32af0ec7.stex" ]
+source_file="res://src/Enemies/bat/bat.png"
+dest_files=[ "res://.import/bat.png-8d29b79156e2210e1f0884a013d9273e.stex" ]
 
 [params]
 

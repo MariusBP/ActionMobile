@@ -6,6 +6,7 @@ onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
 onready var swordHitbox = $HitboxPivot/SwordHitbox
 
+var stats = PlayerStats
 var HitPoints = 100
 var knockback = 1
 var resistance = 0
@@ -24,6 +25,7 @@ enum {
 var state = MOVE
 
 func _ready():
+	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = Vector2.RIGHT
 
@@ -34,7 +36,7 @@ func _physics_process(delta):
 		ATTACK:
 			attack_state(delta)
 		DODGE:
-			dodge_state(delta)
+			dodge_state()
 
 func move_state(delta):
 	var input_vector = Vector2.ZERO
@@ -67,5 +69,9 @@ func attack_state(delta):
 func attack_animation_finished():
 	state = MOVE
 	
-func dodge_state(delta):
+func dodge_state():
 	pass
+
+
+func _on_Hurtbox_area_entered(area):
+	stats.health -= 25
