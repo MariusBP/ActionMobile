@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://src/Characters/Demo/demo_character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/World/Tiles/Tiles.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/Enemies/bat/bat.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Enemies/Bat/bat.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/World/Objects/Table/small_table.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/UI/HealthUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/UI/HealthUI.gd" type="Script" id=6]
 
 [node name="Demo" type="Node2D"]
 
@@ -26,99 +28,30 @@ position = Vector2( 149.709, 108.565 )
 [node name="Bat" type="YSort" parent="YSort"]
 
 [node name="Bat" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 48, 136 )
+position = Vector2( 293.233, 32.7413 )
 
 [node name="Bat2" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 32, 160 )
+position = Vector2( 295.013, 119.056 )
 
 [node name="Bat3" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 56, 160 )
+position = Vector2( 307.755, 96.8749 )
 
 [node name="Bat4" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 32, 136 )
+position = Vector2( 292.417, 104.898 )
 
 [node name="Bat5" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 104, 40 )
+position = Vector2( 300.969, 146.206 )
 
 [node name="Bat6" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 88, 64 )
+position = Vector2( 237.927, 155.07 )
 
 [node name="Bat7" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 112, 64 )
+position = Vector2( 299.496, 102.302 )
 
 [node name="Bat8" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 88, 40 )
-
-[node name="Bat9" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 111.908, 139.784 )
-
-[node name="Bat10" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 95.9081, 163.784 )
-
-[node name="Bat11" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 119.908, 163.784 )
-
-[node name="Bat12" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 95.9081, 139.784 )
-
-[node name="Bat13" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 167.908, 43.784 )
-
-[node name="Bat14" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 151.908, 67.784 )
-
-[node name="Bat15" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 175.908, 67.784 )
-
-[node name="Bat16" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 151.908, 43.784 )
-
-[node name="Bat17" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 162.362, 138.943 )
-
-[node name="Bat18" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 146.362, 162.943 )
-
-[node name="Bat19" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 170.362, 162.943 )
-
-[node name="Bat20" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 146.362, 138.943 )
-
-[node name="Bat21" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 218.362, 42.9431 )
-
-[node name="Bat22" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 202.362, 66.9431 )
-
-[node name="Bat23" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 226.362, 66.9431 )
-
-[node name="Bat24" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 202.362, 42.9431 )
-
-[node name="Bat25" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 226.27, 142.727 )
-
-[node name="Bat26" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 210.27, 166.727 )
-
-[node name="Bat27" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 234.27, 166.727 )
-
-[node name="Bat28" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 210.27, 142.727 )
-
-[node name="Bat29" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 282.27, 46.7272 )
-
-[node name="Bat30" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 266.27, 70.7272 )
-
-[node name="Bat31" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 290.27, 70.7272 )
-
-[node name="Bat32" parent="YSort/Bat" instance=ExtResource( 3 )]
-position = Vector2( 266.27, 46.7272 )
+position = Vector2( 102.32, 70.4777 )
 
 [node name="Node2D" type="Node2D" parent="."]
+
+[node name="HealthUI" parent="." instance=ExtResource( 5 )]
+script = ExtResource( 6 )

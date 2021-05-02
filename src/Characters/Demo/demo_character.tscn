@@ -451,8 +451,8 @@ start_node = "Idle"
 height = 12.0
 
 [sub_resource type="CapsuleShape2D" id=36]
-radius = 4.51244
-height = 4.17302
+radius = 4.84611
+height = 5.84167
 
 [node name="DemoCharacter" type="KinematicBody2D"]
 collision_layer = 2
@@ -507,6 +507,7 @@ disabled = true
 collision_layer = 4
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
+position = Vector2( 0, -1.66855 )
 shape = SubResource( 36 )
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
