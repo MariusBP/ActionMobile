@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bat.png-8d29b79156e2210e1f0884a013d9273e.stex"
+path="res://.import/HitEffect.png-2869d59062a349e761dc2531dda6dfea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/Enemies/bat/bat.png"
-dest_files=[ "res://.import/bat.png-8d29b79156e2210e1f0884a013d9273e.stex" ]
+source_file="res://src/Technical/HitEffect.png"
+dest_files=[ "res://.import/HitEffect.png-2869d59062a349e761dc2531dda6dfea.stex" ]
 
 [params]
 
