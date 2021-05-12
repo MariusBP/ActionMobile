@@ -425,7 +425,7 @@ animation = "AttackUp"
 [sub_resource type="AnimationNodeAnimation" id=20]
 animation = "AttackLeft"
 
-[sub_resource type="AnimationNodeAnimation" id=21]
+[sub_resource type="AnimationNodeAnimation" id=41]
 animation = "AttackRight"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id=22]
@@ -435,7 +435,7 @@ blend_point_1/node = SubResource( 19 )
 blend_point_1/pos = Vector2( 0, -1.1 )
 blend_point_2/node = SubResource( 20 )
 blend_point_2/pos = Vector2( -1, 0 )
-blend_point_3/node = SubResource( 21 )
+blend_point_3/node = SubResource( 41 )
 blend_point_3/pos = Vector2( 1, 0 )
 min_space = Vector2( -1, -1.1 )
 max_space = Vector2( 1, 1.1 )
@@ -554,7 +554,7 @@ anims/RunUp = SubResource( 17 )
 tree_root = SubResource( 37 )
 anim_player = NodePath("../AnimationPlayer")
 parameters/playback = SubResource( 38 )
-parameters/Attack/blend_position = Vector2( -0.322709, 0.275 )
+parameters/Attack/blend_position = Vector2( -0.00154561, 0.438728 )
 parameters/Idle/blend_position = Vector2( 0, 1 )
 parameters/Run/blend_position = Vector2( 0, 1 )
 
@@ -577,8 +577,8 @@ collision_layer = 4
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2( 0, -1.66855 )
 shape = SubResource( 40 )
-
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 
 [editable path="HitboxPivot/SwordHitbox"]
+
 [editable path="Hurtbox"]
