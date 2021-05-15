@@ -8,7 +8,7 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 2.48357
-height = 1.80911
+height = 4.36713
 
 [sub_resource type="Animation" id=2]
 resource_name = "AttackDown"
@@ -456,14 +456,14 @@ radius = 3.15262
 height = 5.84167
 
 [node name="Knight" type="KinematicBody2D"]
+position = Vector2( 0, 2 )
 collision_layer = 2
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0, -9 )
+position = Vector2( 0, -8 )
 texture = ExtResource( 1 )
 hframes = 72
-frame = 46
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 1 )
@@ -503,6 +503,7 @@ script = ExtResource( 4 )
 
 [node name="CollisionShape2D" parent="HitboxPivot/SwordHitbox" index="0"]
 shape = SubResource( 35 )
+disabled = true
 
 [node name="Hurtbox" parent="." instance=ExtResource( 5 )]
 collision_layer = 4
