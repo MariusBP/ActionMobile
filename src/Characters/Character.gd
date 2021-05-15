@@ -59,13 +59,10 @@ func attack_state(_delta):
 	animationState.travel("Attack")
 	velocity = move_and_slide(velocity)
 	velocity = velocity.move_toward(Vector2.ZERO, stats.friction)
-	
-var count = 0
+
 func attack_animation_finished():
 	state = MOVE
-	print(count)
-	count += 1
-	
+
 func dodge_state():
 	pass
 
