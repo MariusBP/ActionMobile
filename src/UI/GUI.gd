@@ -1,16 +1,13 @@
 extends MarginContainer
 
+onready var HP_value = $HBoxContainer/Bars/Health/Count/Background/Number
+onready var HP_bar = $HBoxContainer/Bars/Health/Gauge
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
+func update_health_UI(value):
+	HP_value.text = str(value)
+	HP_bar.value = value
+	
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	var _error = PlayerStats.connect("health_changed", self, "update_health_UI")
+	HP_value.text = str(PlayerStats.health)
+	HP_bar.value = PlayerStats.health

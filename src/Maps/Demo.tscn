@@ -51,4 +51,4 @@ position = Vector2( 299.496, 102.302 )
 position = Vector2( 108, 72 )
 
 [node name="GUI" parent="." instance=ExtResource( 5 )]
-margin_right = 306.0
+margin_right = 321.0
