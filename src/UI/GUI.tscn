@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/UI/UITheme.tres" type="Theme" id=1]
 [ext_resource path="res://src/UI/Bar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://src/UI/Counter.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/UI/GUI.gd" type="Script" id=4]
+[ext_resource path="res://src/UI/pauseIcon.png" type="Texture" id=5]
 
 [node name="GUI" type="MarginContainer"]
 anchor_right = 1.0
@@ -25,15 +26,26 @@ margin_right = 317.0
 margin_bottom = 17.0
 
 [node name="Bars" type="VBoxContainer" parent="HBoxContainer"]
-margin_right = 282.0
+margin_right = 264.0
 margin_bottom = 14.0
 size_flags_horizontal = 3
 
 [node name="Health" parent="HBoxContainer/Bars" instance=ExtResource( 2 )]
+margin_right = 264.0
 
 [node name="Counters" type="HBoxContainer" parent="HBoxContainer"]
-margin_left = 286.0
+margin_left = 268.0
 margin_right = 314.0
 margin_bottom = 14.0
 
 [node name="Counter" parent="HBoxContainer/Counters" instance=ExtResource( 3 )]
+
+[node name="PauseButton" type="MarginContainer" parent="HBoxContainer/Counters"]
+margin_left = 32.0
+margin_right = 46.0
+margin_bottom = 14.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Counters/PauseButton"]
+margin_right = 14.0
+margin_bottom = 14.0
+texture = ExtResource( 5 )

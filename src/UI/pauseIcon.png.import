@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GrassTileset.png-becab068f13ba01b0e7e3c4006040c60.stex"
+path="res://.import/pauseIcon.png-0602bb35aec1b56c8b09037d49de9561.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/UI/GrassTileset.png"
-dest_files=[ "res://.import/GrassTileset.png-becab068f13ba01b0e7e3c4006040c60.stex" ]
+source_file="res://src/UI/pauseIcon.png"
+dest_files=[ "res://.import/pauseIcon.png-0602bb35aec1b56c8b09037d49de9561.stex" ]
 
 [params]
 
