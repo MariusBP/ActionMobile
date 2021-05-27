@@ -6,8 +6,8 @@ export var knockback = 140
 export var resistance = 200
 export var weight = 1
 export var speed = 100
-export var acceleration = 20
-export var friction = 20
+export var acceleration = 300
+export var friction = 200
 export var damage = 20
 
 signal no_health

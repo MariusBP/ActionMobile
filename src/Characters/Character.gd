@@ -67,6 +67,7 @@ func dodge_state():
 	pass
 
 func _on_Hurtbox_area_entered(_area):
-	stats.health -= 20
+	if !hurtbox.invincible:
+		stats.health -= 10
 	hurtbox.start_invincibility(0.5)
 	hurtbox.create_hit_effect()
